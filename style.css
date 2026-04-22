@@ -7,10 +7,12 @@ body {
 }
 
 header {
-    background-color: #f50057; /* Pink header */
+    background: linear-gradient(145deg, #f50057, #ff80ab); /* Gradient for glossy effect */
     color: white;
     padding: 15px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
 }
 
 header nav ul {
@@ -28,10 +30,12 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #ff80ab; /* Lighter pink on hover */
+    color: #ffb3cc; /* Lighter pink on hover */
 }
 
 #home, #about-her, #gallery, #love-letter {
@@ -40,15 +44,20 @@ header nav ul li a:hover {
     margin-bottom: 50px;
     background-color: #212121; /* Dark background for sections */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    background: linear-gradient(145deg, #333333, #444444); /* Glossy gradient */
+    position: relative;
+    overflow: hidden;
 }
 
 h2 {
     color: #f50057; /* Pink headings */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for glossy effect */
 }
 
 #gallery {
     background-color: #333333; /* Dark background for gallery */
+    background: linear-gradient(145deg, #444444, #555555); /* Gradient for glossy feel */
 }
 
 .gallery-container {
@@ -61,16 +70,23 @@ h2 {
 .gallery-item {
     position: relative;
     width: 250px;
+    overflow: hidden;
+    border-radius: 12px; /* Rounded corners for glossiness */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease;
 }
 
 .gallery-img {
     width: 100%;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 12px;
     transition: transform 0.3s ease;
+    filter: brightness(0.8);
 }
 
 .gallery-img:hover {
     transform: scale(1.05);
+    filter: brightness(1); /* Increased brightness on hover */
 }
 
 .caption {
@@ -86,11 +102,11 @@ h2 {
 }
 
 #love-letter {
-    background-color: #f50057; /* Pink background for love letter */
+    background: linear-gradient(145deg, #f50057, #ff80ab); /* Gradient for glossy feel */
     color: white;
     font-style: italic;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -98,8 +114,29 @@ footer {
     color: #fce4ec; /* Light pink text */
     text-align: center;
     padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 footer p {
     margin: 0;
+}
+
+/* Glossy Button Styles */
+button, .btn {
+    background: linear-gradient(145deg, #f50057, #ff80ab); /* Pink gradient button */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-4px); /* Hover effect to lift button */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
