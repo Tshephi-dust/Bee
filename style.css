@@ -1,63 +1,72 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fce4ec;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #fce4ec; /* Light pink text color */
 }
 
 header {
-    background-color: #f50057;
+    background-color: #f50057; /* Pink header */
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
-#intro {
-    text-align: center;
-    margin: 30px 0;
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 1.2em;
 }
 
-#love-counter {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8bbd0;
+header nav ul li a:hover {
+    color: #ff80ab; /* Lighter pink on hover */
 }
 
-#counter {
-    font-size: 2em;
-    color: #f50057;
+#home, #about-her, #gallery, #love-letter {
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #212121; /* Dark background for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
 }
 
-#milestones {
-    text-align: center;
-    padding: 20px;
+h2 {
+    color: #f50057; /* Pink headings */
 }
 
 #gallery {
-    text-align: center;
-    padding: 20px;
+    background-color: #333333; /* Dark background for gallery */
 }
 
 .gallery-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .gallery-item {
     position: relative;
-    width: 300px;
+    width: 250px;
 }
 
 .gallery-img {
     width: 100%;
-    height: auto;
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
 }
 
 .gallery-img:hover {
@@ -70,31 +79,27 @@ header {
     left: 0;
     right: 0;
     text-align: center;
-    font-size: 1.1em;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    color: #fce4ec; /* Light pink text */
     padding: 5px;
     border-radius: 5px;
 }
 
-#messages {
-    background-color: #f8bbd0;
-    padding: 20px;
-    margin: 30px 0;
-}
-
-#playlist {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8bbd0;
+#love-letter {
+    background-color: #f50057; /* Pink background for love letter */
+    color: white;
+    font-style: italic;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background-color: #f50057;
-    color: white;
+    background-color: #121212; /* Dark footer */
+    color: #fce4ec; /* Light pink text */
     text-align: center;
     padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
